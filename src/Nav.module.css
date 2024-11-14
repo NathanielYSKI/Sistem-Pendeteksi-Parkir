@@ -97,4 +97,53 @@
     .view_plans_btn_bar, a {
         transition: all .125s ease;
     }
+
+    /* Styling for username and dropdown */
+    .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .username {
+        font-size: var(--fs);
+        color: var(--dark-grayish-violet);
+        font-weight: var(--fw-karla-bold);
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--white);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-top: 8px;
+        min-width: 140px;
+        z-index: 2;
+    }
+
+    .logoutBtn {
+        background-color: transparent;
+        color: var(--dark-grayish-violet);
+        border: 2px solid var(--dark-grayish-violet);
+        padding: 6px 14px;
+        border-radius: 4px;
+        font-size: var(--fs);
+        cursor: pointer;
+        font-weight: var(--fw-karla-bold);
+        transition: background-color 0.3s, color 0.3s;
+        width: 100%;
+    }
+
+    .logoutBtn:hover {
+        background-color: var(--dark-grayish-violet);
+        color: white;
+    }
+
+    .username:hover {
+        color: var(--very-dark-violet);
+    }
 }
